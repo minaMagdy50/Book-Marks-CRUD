@@ -1,0 +1,39 @@
+body{
+    background: rgb(247, 236, 222);
+}
+::selection {
+    background: rgb(254, 194, 96);
+  }
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 3.125rem;
+    position: relative;
+}
+
+h1::before{
+    content: "";
+    background-color: rgb(254, 194, 96);
+    width: 17.5%;
+    height: 25%;
+    bottom: 18%;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+h1:hover::before{
+    height: 50%;
+}
+.section2{
+    border: dotted .125rem ;
+    border-left: 0;
+    border-right: 0;
+}
+.section2 h3{
+    font-size: 1.5625rem;
+    font-family: 'Righteous', sans-serif;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}

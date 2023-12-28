@@ -37,3 +37,23 @@ h1:hover::before{
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
+
+
+
+@media screen and (max-width : 762px) {
+    .section2 h3{
+        width: 26.25rem;
+    }
+    h1::before{
+        width: 55%;
+    }
+}
+@media screen and (max-width : 700px) {
+    .section2 h3{
+        width: 365px;
+        font-size: 22px;
+    }
+    h1::before{
+        width: 65%;
+    }
+}

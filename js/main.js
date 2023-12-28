@@ -1,6 +1,3 @@
-
-
-
 var siteName = document.getElementById('siteName');
 
 var siteURL = document.getElementById('siteURL');
@@ -32,22 +29,25 @@ function addBookMarks(){
 if( siteName.value == "" && siteURL.value == "" ){
   document.getElementById("test").click()
 }
+
 else if(validtionname() == true && validtionURL() == true){
   
-  bookMarksList.push (bookmarks)
+  bookMarksList.push( bookmarks )
  
-  localStorage.setItem('lista' , JSON.stringify( bookMarksList))
+  localStorage.setItem('lista' , JSON.stringify( bookMarksList ))
+
 }
 
 else if(validtionname() == false && validtionURL() == false){
+
   document.getElementById("test").click()
+
 }
 
 
   displayData();    
 
   cleardata();
-
 
 
 }
@@ -74,7 +74,8 @@ function displayData(){
 
     for ( i=0 ; i < bookMarksList.length ; i++){
    
-      if(bookMarksList[i].Name.toLowerCase().includes( term.toLowerCase())){
+      if( bookMarksList[i].Name.toLowerCase().includes( term.toLowerCase() )){
+
         cartona += `
         <tr>
         <td> ${ i } </td>
